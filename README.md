@@ -27,61 +27,33 @@ Este projeto demonstra a construção de um banco de dados relacional usando MyS
 
 - MySQL instalado na sua máquina. [Baixe aqui](https://dev.mysql.com/downloads/installer/).
 
-### Instalação
-
-1. Clone o repositório:
-
-   `
-   git clone https://github.com/cleverson0803/BancoDeDadosBancario.git
-   cd BancoDeDadosBancario
-   `
-source 01-criacao_banco.sql;
-
-2. Crie o banco de dados e as tabelas:
-
-   \```sql
-   source 01-criacao_banco.sql;
-   \```
-
-3. Insira os dados de exemplo:
-
-   \```sql
-   source 02-insercao_dados.sql;
-   \```
-
-4. Execute as consultas de exemplo:
-
-   \```sql
-   source 03-consultas_exemplos.sql;
-   \```
-
 ## Exemplos de Uso
 
 ### Listar todos os clientes
 
-\```sql
+`
 SELECT * FROM Clientes;
-\```
+`
 
 ### Listar todas as contas com saldo maior que 1000
 
-\```sql
+`
 SELECT * FROM Contas WHERE Saldo > 1000;
-\```
+`
 
 ### Listar todas as transações de uma conta específica
 
-\```sql
+`
 SELECT * FROM Transacoes WHERE ContaOrigemID = 1;
-\```
+`
 
 ### Listar o saldo total de todas as contas de um cliente
 
-\```sql
+`
 SELECT ClienteID, SUM(Saldo) AS SaldoTotal
 FROM Contas
 GROUP BY ClienteID;
-\```
+`
 
 ## Contribuição
 
@@ -99,5 +71,5 @@ GROUP BY ClienteID;
 ---
 
 Feito com ❤️ por [Cleverson](https://github.com/cleverson0803)
-"""
 
+___
