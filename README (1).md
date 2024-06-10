@@ -32,7 +32,7 @@ Este projeto demonstra a construção de um banco de dados relacional usando MyS
 1. Clone o repositório:
 
    \```bash
-   git clone https://github.com/seu-usuario/BancoDeDadosBancario.git
+   git clone https://github.com/cleverson0803/BancoDeDadosBancario.git
    cd BancoDeDadosBancario
    \```
 
